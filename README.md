@@ -4,17 +4,19 @@
 
 ### 主要分为下面三个部分
 
-`node-blog`
-`node-express-blog`
-`node-koa2-blog`
+- `node-blog`
+- `node-express-blog`
+- `node-koa2-blog`
 
 ### 实现的功能
-开发路由
-数据库 MySQL
-登录
-nginx
-日志
-安全（防sql注入、xss攻击）
-Express
-Koa2
-中间件原理
+- 开发路由
+- 数据库 MySQL
+- 登录
+- nginx
+- 日志
+- 安全（防sql注入、xss攻击）
+- Express
+- Koa2
+- 中间件原理
+
+### 项目突出后端 前端非自己实现
