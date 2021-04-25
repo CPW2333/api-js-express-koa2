@@ -25,11 +25,11 @@
 - 接口基准地址：(**可能会变**)
   - `https://wjdywk.ml:4568` (生产环境)
 
-| 描述             | 接口             | 方法 | 参数                                    | 备注                         |
-| :--------------- | :--------------- | :--- | :-------------------------------------- | :--------------------------- |
-| 获取博客列表     | /api/blog/list   | get  | url:author,keyword                      | 参数为空，不进行查询过滤     |
-| 获取一篇博客内容 | /api/blog/detail | get  | url:id                                  |                              |
-| 新增一篇博客     | /api/blog/new    | post | body:{title,content,author,create_time} | author,create_time登录后获取 |
-| 更新一篇博客     | /api/blog/update | post | url:id 、 body:{title,content}          | postData中有更新内容         |
-| 删除一篇博客     | /api/blog/del    | post | url:id 、 body:{author}                 | author登录后获取             |
-| 登录             | /api/user/login  | post | body:{username,password}                | postData中有用户名密码       |
+| 描述             | 接口             | 方法 | 参数                                    | 备注                                                       |
+| :--------------- | :--------------- | :--- | :-------------------------------------- | :--------------------------------------------------------- |
+| 获取博客列表     | /api/blog/list   | get  | url:author,keyword                      | 参数为空，不进行查询过滤                                   |
+| 获取一篇博客内容 | /api/blog/detail | get  | url:id                                  |                                                            |
+| 新增一篇博客     | /api/blog/new    | post | body:{title,content,author,create_time} | author,create_time登录后获取                               |
+| 更新一篇博客     | /api/blog/update | post | url:id 、 body:{title,content}          | postData中有更新内容                                       |
+| 删除一篇博客     | /api/blog/del    | post | url:id 、 body:{author}                 | author登录后获取                                           |
+| 登录             | /api/user/login  | post | body:{username,password}                | postData中有用户名密码 (测试账号及其密码：zhangsan 123456) |
