@@ -76,7 +76,7 @@
         const $tableContainer = $("#table-container");
 
         // 拼接接口 url
-        let url = ":4568/api/blog/list?isadmin=1"; // 增加一个 isadmin=1 参数，使用登录者的用户名，后端也需要修改 ！！！
+        let url = "https://wjdywk.ml:4568/api/blog/list?isadmin=1"; // 增加一个 isadmin=1 参数，使用登录者的用户名，后端也需要修改 ！！！
         const urlParams = getUrlParams();
         if (urlParams.keyword) {
             url += "&keyword=" + urlParams.keyword;
@@ -128,7 +128,7 @@
             }
 
             if (confirm("确定删除？")) {
-                const url = ":4568/api/blog/del?id=" + $target.attr("data-id");
+                const url = "https://wjdywk.ml:4568/api/blog/del?id=" + $target.attr("data-id");
                 post(url).then(res => {
                     if (res.errno !== 0) {
                         alert("请先登录");
